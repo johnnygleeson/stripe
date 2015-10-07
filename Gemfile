@@ -16,8 +16,10 @@ gem 'devise', '~> 3.5.2'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
-gem 'sqlite3' group: :development
-  
+
+group :development, :test do
+  gem 'sqlite3'
+end
 
   
 
