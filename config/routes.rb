@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
-resources :articles
-root 'articles#index'
+  devise_for :users
+  devise_for :views
+ resources :articles
+  root 'articles#index'
 end
