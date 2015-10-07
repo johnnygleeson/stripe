@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.1'
 
 gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
@@ -13,15 +14,14 @@ gem 'simple_form', '~> 3.2.0'
 gem 'haml', '~> 4.0.7'
 gem 'devise', '~> 3.5.2'
 
-group :development do
- 
-  gem 'spring'
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
 end
+
 group :development, :test do
   gem 'sqlite3'
 end
-group :production do
-  gem 'pg'
-end
+
   
 
