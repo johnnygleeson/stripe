@@ -14,14 +14,10 @@ gem 'simple_form', '~> 3.2.0'
 gem 'haml', '~> 4.0.7'
 gem 'devise', '~> 3.5.2'
 
-group :production do
-  gem 'rails_12factor'
-  gem 'pg'
-end
-
-group :development, :test do
-  gem 'sqlite3'
-end
+gem 'rails_12factor', group: :production
+gem 'pg', group: :production
+gem 'sqlite3' group: :development
+  
 
   
 
